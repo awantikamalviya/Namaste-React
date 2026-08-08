@@ -1,3 +1,109 @@
-/* #heading {
-  color: cornflowerblue;
-} */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+.app {
+  height: 100%;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.logo-container {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.logo {
+  width: 70px;
+  padding-top: 10px;
+}
+
+.logo-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: rgb(233, 77, 53);
+}
+
+.nav-items > ul {
+  display: flex;
+  padding: 0 20px;
+  list-style-type: none;
+}
+
+.nav-items > ul > li {
+  font-weight: bold;
+  padding: 10px;
+  margin: 10px;
+}
+
+.body {
+  background-color: #ffd6a5;
+  min-height: 80vh;
+  padding-top: 20px;
+}
+
+.search {
+  margin: 20px;
+}
+
+.search input {
+  border: none;
+  border-radius: 10px;
+  width: 250px;
+  padding: 10px;
+}
+.search input:focus {
+  outline: none;
+  border: 1px solid #e94f37;
+}
+.search button {
+  border: 1px solid #ffd6a5;
+  border-radius: 10px;
+  padding: 10px 15px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.search button:hover {
+  border: 1px solid rgb(233, 77, 53);
+}
+
+.res-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.res-card {
+  width: 200px;
+  padding: 10px;
+  background-color: #fff1e8;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+.res-card:hover {
+  border: 1px solid rgba(99, 96, 96, 0.55);
+  cursor: pointer;
+}
+
+.food-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.res-card h3,
+.res-card h5,
+.res-card p {
+  margin: 5px 0;
+  line-height: 1.2;
+}
